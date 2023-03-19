@@ -21,6 +21,10 @@ router.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, "index.html"));
 });
 
+router.get('/sobre-mim', (request, response) => {
+    response.sendFile(path.join(__dirname, "aboutme.html"));
+});
+
 
 
 router.get("*", (req, res) => {
