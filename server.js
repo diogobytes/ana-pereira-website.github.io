@@ -33,6 +33,10 @@ router.get('/faq', (request, response) => {
     response.sendFile(path.join(__dirname, "faq.html"));
 });
 
+router.get('/consultas', (request, response) => {
+    response.sendFile(path.join(__dirname, "schedule.html"));
+});
+
 
 
 router.get("*", (req, res) => {
