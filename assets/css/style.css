@@ -1070,63 +1070,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 }
 /**** tastimonials section****/
 /***********/
-#button {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 82px;
-    height: 82px;
-    text-align: center;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 57px;
-    right: 113px;
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    -webkit-animation: spineer 2s infinite;
-    animation: spineer 2s infinite;   
-}
-@-webkit-keyframes spineer {
-    from {
-    box-shadow: 0 0 0 0 rgba(255, 161, 34, .99)
-    }
-    to {
-    box-shadow: 0 0 0 45px rgba(255, 161, 34, .01)
-    }
-    }    
-    
-    @keyframes spineer {
-    from {
-    box-shadow: 0 0 0 0 rgba(255, 161, 34, .99)
-    }
-    to {
-    box-shadow: 0 0 0 45px rgba(255, 161, 34, .01)
-    }
-    }
 
-  #button::after {
-    content: "\f062";
-    font-family: "Font Awesome 5 pro";
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 50px;
-    color: #fff;
-  }
-  #button:hover {
-    cursor: pointer;
-  }
-  #button:active {
-    background-color: #555;
-  }
-  #button.show {
-    opacity: 1;
-    visibility: visible;
-  }
   .modal-dialog {
     max-width: 48%;
 }
@@ -1617,4 +1561,57 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
   
   .collapsible-link[aria-expanded='true']::before {
     transform: rotate(180deg);
+  }
+
+  
+  a{
+    text-decoration:none;
+  }
+  .floating_btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    z-index: 1000;
+  }
+  
+  @keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+  }
+  
+  .contact_icon {
+    background-color: #42db87;
+    width: 70px;
+    height: 70px;
+    font-size:30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 0 0 #42db87;
+    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all 300ms ease-in-out;
+  }
+  
+  
+  .text_icon {
+    margin-top: 8px;
+    color: #707070;
+    font-size: 13px;
   }
