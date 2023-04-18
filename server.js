@@ -38,6 +38,14 @@ router.get('/consultas', (request, response) => {
 });
 
 
+router.get('/enviado', (request, response) => {
+    response.sendFile(path.join(__dirname, "thankyou.html"));
+});
+
+
+
+
+
 
 router.get("*", (req, res) => {
     res.json("Page not found");

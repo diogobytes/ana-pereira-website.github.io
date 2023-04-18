@@ -1,11 +1,12 @@
 jQuery(document).ready(function ($) {
 	$('#submit').on('click',document,function(event){
-	    
+	  
 		var tempValue = jQuery(this).html();
 		jQuery("form#contactpage").validate({
 			submitHandler : function (e) {
 				submitSignupFormNow(jQuery("form#contactpage"));
-			console.log("validator working");
+			console.log("validator workin ");
+			
 			},
 			rules : {
 				name : {
@@ -29,7 +30,7 @@ jQuery(document).ready(function ($) {
 			var n = "contact-form.php";
 			jQuery.ajax({
 				url : n,
-				type : "POST",
+				type : "post",
 				data : t,
 				success : function (e) {
 					var t = jQuery.parseJSON(e);

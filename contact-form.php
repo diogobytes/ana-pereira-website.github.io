@@ -6,6 +6,8 @@ $phone= $_POST['phone'];
 $subject= $_POST['subject'];
 $comments=$_POST['comments'];
 
+
+
 if(isset($name) && isset($phone) && isset($emailHelp))
 {
 	global $to_email,$vpb_message_body,$headers;
