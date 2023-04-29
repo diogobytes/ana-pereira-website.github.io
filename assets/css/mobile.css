@@ -1094,7 +1094,7 @@
 }
 @media only screen and (max-width: 450px){
     .portfolio-img-title {
-        margin-left: 20px;
+        margin-left: 0px;
     }  
     .portfolio-img-content a i {
         position: absolute;
