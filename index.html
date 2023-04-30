@@ -31,7 +31,7 @@
                         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                            <ul class="navbar-nav ml-auto">
                               <li class="nav-item  pl-0">
-                                 <a class="nav-link p-0 " href="/sobre-mim">Sobre mim</a>
+                                 <a class="nav-link p-0" href="/sobre-mim">Sobre mim</a>
                               </li>
                            
                               <li class="nav-item">
@@ -76,8 +76,8 @@
                            </div>
                         </div>
                         <div class="col-lg-5 col-sm-12">
-                              <figure class="mb-0">
-                                 <img src="assets/image/profile-ana.jpeg" alt="banner-right-img" >
+                              <figure class="mb-0 ">
+                                 <img  src="assets/image/photo-main.jpg" alt="banner-right-img" class="img-fluid" >
                               </figure>
                            </div>
                         </div>
@@ -182,8 +182,8 @@
                            cliente não resulta com outro, será sempre o terapeuta a definir
                            as técnicas utilizadas
                         </p>
-                        <div class="generic-btn download-bnt">
-                           <a href="#" id="downloadImg" onclick="">Veja o Video</a>                  
+                        <div class="generic-btn download-btn">
+                           <a href="#" class="video-btn" data-toggle="modal" data-src="assets/videos/video-areas.mp4" data-target="#video_pop">Veja o Video</a>       
                         </div>
                      </div>
                   </div>
@@ -342,7 +342,7 @@
                            <div class="blog-img">
                               <a href="#" data-toggle="modal" data-target="#blog-model-2">
                                  <figure class="mb-0">
-                                    <img src="assets/image/blog-1.jpg"  alt="blog-img" class="img-fluid" >
+                                    <img src="assets/image/blog-image.jpg"  alt="blog-img" class="img-fluid" >
                                  </figure>
                               </a>
                            </div>
@@ -722,7 +722,7 @@ vemos em espetáculos ou na televisão</p>
                   <div class="blog-box-item mb-0">
                      <div class="blog-img">
                         <figure class="mb-0">
-                           <img src="assets/image/blog-1.jpg" alt="blog-img" class="img-fluid">
+                           <img src="assets/image/blog-image.jpg" alt="blog-img" class="img-fluid">
                         </figure>
                      </div>
                      <div class="blog-content pl-0 pr-0">
@@ -880,7 +880,25 @@ vemos em espetáculos ou na televisão</p>
          </div>
         
       </div>
-      
+      <!-- POPUP -->
+ <div class="modal fade" id="video_pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-body">        
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>        
+             <!-- 16:9 aspect ratio -->
+             <div class="embed-responsive embed-responsive-16by9">
+               <video controls>
+                  <source src="assets/videos/video-sobre-mim.mp4" type="video/mp4">
+                  Your browser does not support HTML video.
+                </video>
+             </div>                
+       </div>        
+     </div>
+   </div>
+</div>
   
       <!-- weight footer section -->
       <script src="assets/js/wow.js"></script>
@@ -893,6 +911,28 @@ vemos em espetáculos ou na televisão</p>
       <script src="assets/js/bootstrap.min.js"> </script>
       <script src="assets/js/custom-script.js"> </script>
       <script src="assets/js/contact-form.js"></script>
+      <script>
+                     $(document).ready(function() {  
+               // Gets the video src from the data-src on each button    
+               var $videoSrc;  
+               $('.video-btn').click(function() {
+                  $videoSrc = $(this).data( "src" );      
+               });
+               //console.log($videoSrc);  
+                  
+               // when the modal is opened autoplay it  
+               $('#video_pop').on('shown.bs.modal', function (e) {
+                  
+               // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+               $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+               })
+                  // stop playing the youtube video when I close the modal
+               $('#video_pop').on('hide.bs.modal', function (e) {
+                  $("#video").attr('src',$videoSrc); 
+               }) 
+               
+               }); 
+      </script>
       <script>
          filterSelection("all")
          function filterSelection(c) {
