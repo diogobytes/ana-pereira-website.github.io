@@ -9,6 +9,10 @@
       <link rel="stylesheet" href="assets/css/super-classes.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/mobile.css">
+      <link rel="stylesheet" href="bower_components/google-places/google-places.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://ooblec.co/wp-content/themes/divi-child/js/google-places.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBuwFDr9lLQBgMjrxhszFRVA01iuYS_0xI&libraries=places"></script>
       <title>Ana Pereira | Website</title>
    </head>
    <body>
@@ -65,7 +69,7 @@
                                     <p>Psicoterapeuta Transpessoal</p>
                                 
                                   </ul>
-                                 <p>Acredito, tal como Milton Erickson defendia, que cada cliente possui os recursos necessários resolver os problemas.
+                                 <p>Acredito, tal como Milton Erickson defendia, que cada cliente possui os recursos necessários para resolver os seus problemas.
                                     O meu papel é facilitar o processo.
                                  </p>
                               </div>
@@ -165,9 +169,9 @@
                         <h2>Áreas de Intervenção
                         </h2>
                         <p>Existem muitos motivos pelos quais os clientes recorrem a
-                           terapia, entre as mais comuns estão a ansiedade, depressão, as
+                           terapia, entre os mais comuns estão a ansiedade, depressão, as
                            fobias e medos, traumas, a cessação tabágica (parar de fumar) ou
-                           outros vícios e recuperação da silhueta ideal ( emagrecimento) e
+                           outros vícios, recuperação da silhueta ideal ( emagrecimento) e
                            problemas de relacionamentos.
                         </p>
                         <p>
@@ -183,7 +187,7 @@
                            as técnicas utilizadas
                         </p>
                         <div class="generic-btn download-btn">
-                           <a href="#" class="video-btn" data-toggle="modal" data-src="assets/videos/video-areas.mp4" data-target="#video_pop">Veja o Video</a>       
+                           <a href="#myModal" class="video-btn" data-toggle="modal">Veja o Video</a>
                         </div>
                      </div>
                   </div>
@@ -192,7 +196,6 @@
          </div>
       </section>
       <!-- skill section -->
-    
  <!-- service section -->
  <section class="w-100 float-left skill-con service-con padding-top padding-bottom position-relative" id="service-con" >
    <div class="container">
@@ -290,18 +293,126 @@
       </div>
    </div>
 </section>
-<!-- service section -->
 
+    <!-- testimonials section -->
+    <section  style="height: 650px;" class="w-100 float-left padding-top padding-bottom tastimonials-con position-relative text-lg-left text-center" id="testimonials">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-5">
+                  <div class="tastimonials-left-con wow slideInLeft" >
+                  <figure class="mb-0">
+                     <img src="assets/image/testimonials-img.png" alt="tastimonials-img" class="img-fluid">
+                  </figure>
+               </div>
+            </div>
+            <div class="col-lg-7">
+               <div id="carouselExampleControls" class="carousel slide wow slideInRight" data-ride="carousel" >
+                  <div style="height: 320px;" class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="testimonials-content">
+                           <h6>Testemunhos</h6>
+                           <h2>O que dizem sobre as sessões</h2>
+                           <figure class="mb-0">
+                              <img src="assets/image/comma-icon.png" alt="comma-icon" class="img-fluid">
+                           </figure>
+                           <div class="testimonials-inner-content">
+                              <p>
+                                 Excelente terapeuta. Muito assertiva , dedicada, onde nos sentimos em segurança para podermos fazer o nosso processo sem julgamentos. Alguém que tem a capacidade de nos fazer questionar , observar e dá-nos igualmente imensas ferramentas que nos ajudam no dia a dia.
+                               
+                              </p>
+                              <span class="d-block auther-name">Patrícia Lamorya</span>
+                              <span class="d-block">Google Account </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="testimonials-content">
+                           <h6>Testemunhos</h6>
+                           <h2>O que dizem sobre as sessões</h2>
+                           <figure class="mb-0">
+                              <img src="assets/image/comma-icon.png" alt="comma-icon" class="img-fluid">
+                           </figure>
+                           <div class="testimonials-inner-content">
+                              <p>
+                                 Grata pelas palavras, pela sinceridade, pelos ensinamentos que aprendi...."..doeu...leva que é teu" e levava sempre em cada sessão.. Grata também pelo carinho e riso contagiante.
+                               
+                              </p>
+                              <span class="d-block auther-name">Carla Teodoro</span>
+                              <span class="d-block">Google Account</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="testimonials-content">
+                           <h6>Testemunhos</h6>
+                           <h2>O que dizem sobre as sessões</h2>
+                           <figure class="mb-0">
+                              <img src="assets/image/comma-icon.png" alt="comma-icon" class="img-fluid">
+                           </figure>
+                           <div class="testimonials-inner-content">
+                              <p>
 
-
-      <!-- testimonials section -->
-      <section class="w-100 float-left padding-top padding-bottom tastimonials-con position-relative text-lg-left text-center" id="testimonials">
-         <div class="container">
-           
-            <!-- #TODO Testimonials-->
+                                 A melhor pessoa com o coração no sítio certo que nos ajuda sem pressionar
+                               
+                              </p>
+                              <span class="d-block auther-name">tania santos</span>
+                              <span class="d-block">Google Account</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="testimonials-content">
+                           <h6>Testemunhos</h6>
+                           <h2>O que dizem sobre as sessões</h2>
+                           <figure class="mb-0">
+                              <img src="assets/image/comma-icon.png" alt="comma-icon" class="img-fluid">
+                           </figure>
+                           <div class="testimonials-inner-content">
+                              <p>
+                                 Excelente profissional, muito competente e dedicada.
+                               
+                              </p>
+                              <span class="d-block auther-name">Hugo Machado</span>
+                              <span class="d-block">Google Account</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div  class="carousel-item">
+                        <div class="testimonials-content">
+                           <h6>Testemunhos</h6>
+                           <h2>O que dizem sobre as sessões</h2>
+                           <figure class="mb-0">
+                              <img src="assets/image/comma-icon.png" alt="comma-icon" class="img-fluid">
+                           </figure>
+                           <div class="testimonials-inner-content">
+                              <p>
+                                 Uma sensibilidade genuína. Enorme sentido de responsabilidade. Ser humano grandioso.
+                               
+                              </p>
+                              <span class="d-block auther-name">Teresa Alves</span>
+                              <span class="d-block">Google Account</span>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+                  <div class="container">
+                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class="fas fa-arrow-left d-flex align-items-center justify-content-center"></i>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="fas fa-arrow-right d-flex align-items-center justify-content-center"></i>
+                        <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+               
+            </div>
          </div>
-      </section>
-      <!-- tastimonials section -->
+      </div>
+   </section>
+      <!-- testimonials section -->
       <!-- blog section -->
       <section class="w-100 float-left blog-con padding-top padding-bottom position-relative " id="blog">
          <div class="container">
@@ -392,7 +503,7 @@
          </div>
       </section>
       <!-- blog section -->
-     
+      
       <!-- weight footer section -->
       <div class="w-100 float-left weight-footer-con position-relative">
          <div class="container">
@@ -468,14 +579,14 @@
                   </figure>
                   <h4>Hipnoterapia</h4>
                   <p class="mb-md-4 mb-2">A Hipnose não é mais do que um estado de consciência alterada, onde o indivíduo é
-                     levado a sentir um profundo relaxamento e bem estar  a sua concentração fica
+                     levado a sentir um profundo relaxamento e bem estar,  a sua concentração fica
                      mais focada no que o terapeuta lhe sugere, mantendo sempre a sua consciência e não
                      sendo nunca levado a fazer nada contra a sua vontade, ou que o prejudique.</p>  
                      <p>
                         É uma técnica extremamente eficaz para chegar à raiz dos problemas e ou comportamentos
                         e obter resultados  mais rápidos e duradouros , em  comparação com outras técnicas.
                         Para que seja mais eficaz é necessário que o cliente queira tratar-se e ou mudar
-                        comportamentos e que se deixe guiar pelo terapeuta, que lhe vai dando as sugestões
+                        comportamentos, e que se deixe guiar pelo terapeuta, que lhe vai dando as sugestões
                         mais eficazes para o seu caso.
                      </p>
                      <p>
@@ -513,7 +624,7 @@ vemos em espetáculos ou na televisão</p>
                      mesmo que conscientemente achemos que já possam ter sido resolvidos , no inconsciente isso ainda não aconteceu.
                      A emoção continua presente dentro de nós e continua a condicionarmo-nos.</p>  
                      <p>
-                        A terapia regressiva está indicada entre outras nas situações seguintes:
+                        A terapia regressiva está indicada entre outras, nas situações seguintes:
                      </p>
                      <ul class="list-unstyled model-list mb-md-3 mb-2">
                         <li><i class="fas fa-check-circle"></i>Ansiedade</li>
@@ -523,8 +634,9 @@ vemos em espetáculos ou na televisão</p>
                      <li><i class="fas fa-check-circle"></i>Perturbações alimentares (compulsão, bulimia, anorexia)</li>
                   </ul>
                   <p class="mb-0">Na terapia regressiva o cliente fica num estado de consciência alterada,
-                  com mais ou menos aprofundamento, mas sempre consciente e acede a memórias traumáticas e resinificadas as emoções 
-                  a elas associadas e libertados os pesos que continham até ai.    
+                  com mais ou menos aprofundamento, mas sempre consciente e acede a memórias traumáticas que são trabalhadas e resinificadas, libertando
+                  as emoções a elas associadas, e o peso que continham até ai, permitindo seguir em frente de uma forma mais tranquila
+                  e confiante.
                   </p>  
                </div>
             </div>
@@ -552,8 +664,7 @@ vemos em espetáculos ou na televisão</p>
                         <li><i class="fas fa-check-circle"></i>Escolha de áreas de estudo</li>
                   </ul>
                   <p class="mb-0">Deverão ser avaliadas realisticamente todas as variáveis
-                     influenciadoras negativa ou positivamente para que o objectivo seja
-                     atingido e trabalhados com o cliente ao longo do tempo, todos os passos
+                     influenciadoras, negativa ou positivamente, e trabalhados com o cliente ao longo do tempo, todos os passos
                      para que o objectivo seja atingido.</p>  
                </div>
             </div>
@@ -588,7 +699,7 @@ vemos em espetáculos ou na televisão</p>
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" ><i class="far fa-times"></i></span></button>
+                  <button type="button" class=" " data-dismiss="modal" aria-label="Close"><span aria-hidden="true" ><i class="far fa-times"></i></span></button>
                </div>
                <div class="modal-body service-model-content">
                   <figure class="mb-0">
@@ -597,7 +708,7 @@ vemos em espetáculos ou na televisão</p>
                   <h4>Terapia Energética</h4>
                   <p class="mb-md-4 mb-2">A Terapia energética é uma prática que procura equilibrar e harmonizar a energia do corpo, mente e 
                      espírito para promover a cura física, emocional e espiritual. Ela pode incluir várias técnicas, como Reiki, 
-                     Pêndulo hebreu, entre outras, que corrigem e limpam desequilíbrios energéticos que depois podem levar a 
+                     Pêndulo hebreu, entre outras, limpam desequilíbrios energéticos, que  podem levar a 
                      problemas de saúde e bem-estar. A terapia energética é baseada na ideia de que tudo no universo é energia e que, ao equilibrar essa energia,
                       é possível promover a cura e o bem-estar.
                   </p>  
@@ -899,7 +1010,45 @@ vemos em espetáculos ou na televisão</p>
      </div>
    </div>
 </div>
-  
+<div class="bs-example">
+   <!-- Button HTML (to Trigger Modal) -->
+
+   
+   <!-- Modal HTML -->
+   <div id="myModal" class="modal fade">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                 <div class="embed-responsive embed-responsive-16by9">
+                   <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" sandbox src="assets/videos/video-areas.mp4" allowfullscreen></iframe>
+                  </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>   
+<script>
+   $(document).ready(function(){
+       /* Get iframe src attribute value i.e. YouTube video url
+       and store it in a variable */
+       var url = $("#cartoonVideo").attr('src');
+       
+       /* Assign empty url value to the iframe src attribute when
+       modal hide, which stop the video playing */
+       $("#myModal").on('hide.bs.modal', function(){
+           $("#cartoonVideo").attr('src', '');
+       });
+       
+       /* Assign the initially stored url back to the iframe src
+       attribute when modal is displayed again */
+       $("#myModal").on('show.bs.modal', function(){
+           $("#cartoonVideo").attr('src', url);
+       });
+   });
+   </script>
       <!-- weight footer section -->
       <script src="assets/js/wow.js"></script>
       <script>
@@ -911,28 +1060,7 @@ vemos em espetáculos ou na televisão</p>
       <script src="assets/js/bootstrap.min.js"> </script>
       <script src="assets/js/custom-script.js"> </script>
       <script src="assets/js/contact-form.js"></script>
-      <script>
-                     $(document).ready(function() {  
-               // Gets the video src from the data-src on each button    
-               var $videoSrc;  
-               $('.video-btn').click(function() {
-                  $videoSrc = $(this).data( "src" );      
-               });
-               //console.log($videoSrc);  
-                  
-               // when the modal is opened autoplay it  
-               $('#video_pop').on('shown.bs.modal', function (e) {
-                  
-               // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-               $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
-               })
-                  // stop playing the youtube video when I close the modal
-               $('#video_pop').on('hide.bs.modal', function (e) {
-                  $("#video").attr('src',$videoSrc); 
-               }) 
-               
-               }); 
-      </script>
+    
       <script>
          filterSelection("all")
          function filterSelection(c) {
@@ -1067,6 +1195,5 @@ link.addEventListener('click', function() {
 
 });
    </script>
-    
    </body>
 </html>

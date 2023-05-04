@@ -1458,7 +1458,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
   
 
   .services-block-three{
-    margin-bottom" 30px;
+    margin-bottom: 30px;
   }
   .services-block-three i {
       font-size: 32px;
@@ -1615,3 +1615,4 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     color: #707070;
     font-size: 13px;
   }
+
