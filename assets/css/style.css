@@ -1625,4 +1625,8 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 
   .collapsible-link {
     padding-right: 25px;
+    
+  }
+  .bg-color {
+    background-color: #4081FC
   }
