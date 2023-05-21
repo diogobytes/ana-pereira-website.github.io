@@ -1025,7 +1025,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 }
 .carousel-control-next,
 .carousel-control-prev{
-    transition-duration: .3s;
+    transition-duration: 0.05s;
     transition-property: all;
     transition-timing-function: ease-out;
 }
