@@ -35,7 +35,7 @@
                             <li class="nav-item  pl-0">
                                <a class="nav-link p-0 " href="/sobre-mim">Sobre mim</a>
                             </li>
-                         
+
                             <li class="nav-item">
                                <a class="nav-link p-0" href="/consultas">Consultas</a>
                             </li>
@@ -52,11 +52,11 @@
                </header>
              </div>
              <!--navbar-end-->
-           
-    
+
+
     <!-- Whatsapp widget-->
     <div class="floating_btn">
-      <a target="_blank" href="https://wa.me/962442256">
+      <a target="_blank" href="https://wa.me/924169474">
         <div class="contact_icon">
          <i class="fab fa-whatsapp" style="color: #ffffff;"></i>
         </div>
@@ -71,7 +71,7 @@
          <div class="generic-title text-center">
             <h6>Obrigada</h6>
             <h2 class="mb-0">Enviado com sucesso
-               
+
             </h2>
             <div class="pt-5">
             <img src="assets/image/checked.png" style="height: 120px; " alt="logo-img" class="img-fluid">
@@ -80,13 +80,13 @@
             <p class="text-center">Será respondido com a maior brevidade possivel.</p>
          </div>
          </div>
-        
+
          </div>
       </div>
    </div>
 </section>
 <!-- service section -->
-     
+
       <!-- weight footer section -->
       <div class="w-100 float-left weight-footer-con position-relative">
          <div class="container">
@@ -94,14 +94,15 @@
                <figure class="">
                   <img src="assets/image/ana-pereira-white-logo.png"  style="height: 50px;" alt="footer-logo" class="img-fluid">
                </figure>
-               <div class="footer-navbar">
+                <div class="footer-navbar">
                   <ul class="list-unstyled">
-                     <li class="d-inline-block border-left-0 pl-0"><a href="/sobre-mim">Sobre mim</a></li>
-                     <li class="d-inline-block"><a href="/consultas">Consultas</a></li>
-                     <li class="d-inline-block"><a href="/faq">Perguntas e Respostas</a></li>
-                     <li class="d-inline-block pr-0"><a href="/contactos">Contactos</a></li>
+                    <li class="d-inline-block border-left-0 pl-0"><a href="/sobre-mim">Sobre mim</a></li>
+                    <li class="d-inline-block"><a href="/consultas">Consultas</a></li>
+                    <li class="d-inline-block"><a href="/faq">Perguntas e Respostas</a></li>
+                    <li class="d-inline-block"><a href="/contactos">Contactos</a></li>
+                    <li class="d-inline-block pr-0"><a href="/termos-e-condicoes">Termos e condições</a></li>
                   </ul>
-               </div>
+                </div>
                <div class="footer-social-icon">
                   <ul class="mb-0">
                      <li class="d-inline-block">
@@ -143,7 +144,7 @@
          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
          }
          }
-         
+
          function w3AddClass(element, name) {
          var i, arr1, arr2;
          arr1 = element.className.split(" ");
@@ -152,19 +153,19 @@
          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
          }
          }
-         
+
          function w3RemoveClass(element, name) {
          var i, arr1, arr2;
          arr1 = element.className.split(" ");
          arr2 = name.split(" ");
          for (i = 0; i < arr2.length; i++) {
          while (arr1.indexOf(arr2[i]) > -1) {
-         arr1.splice(arr1.indexOf(arr2[i]), 1);     
+         arr1.splice(arr1.indexOf(arr2[i]), 1);
          }
          }
          element.className = arr1.join(" ");
          }
-         
+
          // Add active class to the current button (highlight it)
          var btnContainer = document.getElementById("myBtnContainer");
          var btns = btnContainer.getElementsByClassName("btn");
@@ -178,7 +179,7 @@
       </script>
       <script>
          var btn = $('#button');
-         
+
          $(window).scroll(function() {
          if ($(window).scrollTop() > 300) {
          btn.addClass('show');
@@ -186,32 +187,32 @@
          btn.removeClass('show');
          }
          });
-         
+
          btn.on('click', function(e) {
          e.preventDefault();
          $('html, body').animate({scrollTop:0}, '300');
          });
-         
+
       </script>
       <script>
          $(window).scroll(function(){
-         
+
          if ($(window).scrollTop() >= 113) {
-         
+
          $('header').addClass('fixed-header');
          $('.banner-main-con').addClass('banner-main-con2');
-         
+
          }
-         
+
          else {
-         
+
          $('header').removeClass('fixed-header');
          $('.banner-main-con').removeClass('banner-main-con2');
-         
+
          }
-         
+
          });
-         
+
       </script>
    <script>
 document.querySelectorAll('.nav-item a').forEach(function(link, index){
