@@ -13,6 +13,14 @@
 
       <title>Ana Pereira | Website</title>
    </head>
+    <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11451898631"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11451898631');
+   </script>  
    <body>
       <!---header-and-banner-section-->
       <div class="header-and-banner-con w-100 float-left position-relative">
@@ -22,7 +30,7 @@
                   <span class="navbar-text fas fa-phone">
                       924169474
                   </span>
-                  <span class="navbar-text ml-2 fas fa-envelope pl-2">  anapereiraterapeutaecoach@gmail.com</span>
+                  <span class="navbar-text ml-2 fas fa-envelope pl-2">anapereiraterapeutaecoach@gmail.com</span>
               </nav>
               <!--navbar-start-->
               <div class="container pl-0 pr-0">
@@ -108,8 +116,8 @@
            </div>
            <div class="col-lg-8">
 
-             <form id= "contactpage"  action="https://formsubmit.co/168efacee8069bf27d660e4324af97a3" method="POST" class="contact-form wow slideInRight text-lg-left text-center"  >
-                <div class="row">
+             <form id= "contactpage"  action="https://formsubmit.co/diogo.guedes111@gmail.com" method="POST" class="contact-form wow slideInRight text-lg-left text-center"  >
+               <div class="row">
                    <div class="col-lg-6 col-md-6">
                       <div class="form-group mb-0">
                          <input type="text"  placeholder="Nome" name="name" id="name" autocomplete="off" required>
@@ -132,16 +140,15 @@
                       </div>
                    </div>
                 </div>
-                <div class="rosw">
+                <div class="row">
                    <div class="col-lg-12">
                       <div class=" form-group mb-0">
                          <textarea  placeholder="Mensagem" rows="3" name="message" id="comments"></textarea>
                       </div>
                    </div>
                 </div>
-
                 <button type="submit" id="submit" class="appointment-btn">Enviar</button>
-
+                <input type="hidden" name="_next" value="https://www.anapereiraterapeuta.pt/enviado">
              </form>
 
            </div>
