@@ -3,13 +3,11 @@
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <link rel="stylesheet" href=" /css/animate.css">
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/super-classes.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/mobile.css">
-      <link rel="stylesheet" href="bower_components/google-places/google-places.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://ooblec.co/wp-content/themes/divi-child/js/google-places.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBuwFDr9lLQBgMjrxhszFRVA01iuYS_0xI&libraries=places"></script>
@@ -1099,17 +1097,7 @@
          }
          element.className = arr1.join(" ");
          }
-
-         // Add active class to the current button (highlight it)
-         var btnContainer = document.getElementById("myBtnContainer");
-         var btns = btnContainer.getElementsByClassName("btn");
-         for (var i = 0; i < btns.length; i++) {
-         btns[i].addEventListener("click", function(){
-         var current = document.getElementsByClassName("active");
-         current[0].className = current[0].className.replace(" active", "");
-         this.className += " active";
-         });
-         }
+        
       </script>
       <script>
          var btn = $('#button');
